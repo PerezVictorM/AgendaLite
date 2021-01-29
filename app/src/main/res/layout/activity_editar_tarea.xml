@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtTitulo_ACT"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="Editar Actividad"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitulo_ACT"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="0dp"
+        android:text="  Nombre:"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/TXT_FECHA"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Date"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="-51dp"
+        android:layout_toEndOf="@+id/Date"
+        android:layout_toRightOf="@+id/Date"
+        android:layout_weight="1"
+        android:contentDescription="Fecha"
+        android:ems="10"
+        android:hint="Día"
+        android:inputType="number"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textColorLink="#FFCC9108" />
+
+    <Button
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/txtNombre"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="#FFCC9108"
+        android:text="Fecha"
+        android:textColor="#F8F4F4" />
+
+    <EditText
+        android:id="@+id/TXT_Nombre_ACT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtNombre"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_toEndOf="@+id/txtNombre"
+        android:layout_toRightOf="@+id/txtNombre"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/cal"
+        android:textColorHint="@color/cal"
+        android:textColorLink="#FFCC9108" />
+
+    <EditText
+        android:id="@+id/TXT_HORA"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/BtnHora"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginBottom="-54dp"
+        android:layout_toEndOf="@+id/BtnHora"
+        android:layout_toRightOf="@+id/BtnHora"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Hora"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorLink="#FFCC9108" />
+
+    <Button
+        android:id="@+id/BtnHora"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_below="@id/Date"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="#FFCC9108"
+        android:text="Hora"
+        android:textColor="#F8F4F4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnHora"
+        android:text=" Descripción:"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/TXT_DCP_ACT"
+        android:layout_width="340dp"
+        android:layout_height="164dp"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="256dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:gravity="start|top"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:isScrollContainer="true"
+        android:textColor="#000000"
+        android:textColorLink="#FFCC9108" />
+
+    <LinearLayout
+        android:layout_width="201dp"
+        android:layout_height="107dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/BTN_ACT"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="207dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="79dp"
+            android:background="#FFCC9108"
+            android:text="Actualizar"
+            android:textColor="#F8F4F4"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+</RelativeLayout>
